@@ -8,36 +8,31 @@ body {
     line-height: 21px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-top: 50px;
-
 }
 
 .red-background {
-    position: relative;
+    background-position: center;
     background-color: #BE0909;
     max-width: 954px;
     width: 100%;
-    height: 594px;
-    margin: 50px;
-    padding-left: 65px;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    min-height: 594px;
+    margin: auto;
+    margin-top: 50px;
     display: flex;
-    align-content: flex-end;
-    align-items: flex-end;
-    justify-content: end;
-    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    
 }
 
 form {
-    width: 400px;
+    max-width: 400px;
     width: 100%;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-
+    gap: 30px;
 }
+
 yellow-background {
     width: 345px;
     height: 594px;
@@ -51,7 +46,7 @@ yellow-background {
 
 
 .submit-btn {
-    align-self: flex-start;
+    align-self: center;
     width: 202px;
     height: 48px;
     font-family: 'Roboto';
@@ -68,14 +63,56 @@ yellow-background {
     border: none;
 }
 
-.subbmit-btn:hover {
-    color: #FFB039;
-    background-color: #e2a6d6;
+.input-field, .textarea {
+    box-sizing: border-box;
+    width: 400px;
+    background-color: #BE0909;
+    border: solid;
+    border-width: 1px;
+    border-color: #9DBEBB;
+    border-left: none;
+    border-top: none; 
+    border-right: none;
+}
+
+#email, #theme{
+    width: 160px;
+}
+
+.textarea {
+    resize: none;
+    width: 400px;
+    
+}
+.input-field::placeholder, .textarea::placeholder {
+    color: #FEFFFF;
+    opacity: 1;
+    font-weight: 100;
+}
+
+.input-field:focus {
+    outline-color: #FFB039;
+    border:#FFB039;
+    border-radius: 10px;
+}
+
+.input-field:hover, .textarea:hover {
+    background-color: #9DBEBB;
+    border-radius: 10px;
+    border-color: #FFB039;
+    border: 10px;
+}
+
+.submit-btn:hover {
+    color:rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    background-color: #FFB039;
     border-top: 2px solid rgba(0, 0, 0, 0.5);
+    
 }
 
 .duck-img {
     align-self: flex-end;
-    height: 500px;
+    
     
 }
