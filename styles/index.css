@@ -1,0 +1,13 @@
+body {
+    background-color: #9DBEBB;
+}
+
+div {
+    position: relative;
+    background-color: #BE0909;
+    max-width: 954px;
+    width: 100%;
+    height: 594px;
+    left: 243px;
+    top: 153px;
+}
