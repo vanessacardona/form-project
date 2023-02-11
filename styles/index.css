@@ -8,21 +8,37 @@ body {
     line-height: 21px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin-top: 50px;
+
 }
 
 .red-background {
+    position: relative;
     background-color: #BE0909;
-    max-width: 609px;
+    max-width: 954px;
     width: 100%;
     height: 594px;
-    display: block;
-    margin-left: 243px;
-    margin-top: 153px;
-    margin-bottom: 153px;
-    
+    margin: 50px;
+    padding-left: 65px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: row;
 }
 
-.yellow-background {
+form {
+    width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+yellow-background {
     width: 345px;
     height: 594px;
     background: #FFB039;
@@ -33,7 +49,9 @@ body {
     
 }
 
+
 .submit-btn {
+    align-self: flex-start;
     width: 202px;
     height: 48px;
     font-family: 'Roboto';
@@ -50,3 +68,14 @@ body {
     border: none;
 }
 
+.subbmit-btn:hover {
+    color: #FFB039;
+    background-color: #e2a6d6;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.duck-img {
+    align-self: flex-end;
+    height: 500px;
+    
+}

@@ -15,23 +15,24 @@
     <div class="red-background">
         <div>
             <form action="">
-                <p>Full name</p>
-                    <input type="text">
-                <p>Email</p>
-                    <input type="email" name="" id="" placeholder="Y o u r  E m a i l">
-                <p>Message regarding</p>
-                <input type="text">
-                <p>Message</p>
-                <textarea name="message" id="message" cols="" rows="" placeholder="Y o u r   M e s s a g e"></textarea>
+                <label for="name">Full name</Label>
+                    <input type="text" id="name" required autofocus>
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Y o u r  E m a i l">
+                <label for="theme">Message regarding</label>
+                    <input type="text" id="theme">
+                <label for="message" class="label text-space">Message</label>
+                    <textarea name="message" id="message" cols="" rows="" placeholder="Y o u r   M e s s a g e"></textarea>
                 <button type="submit" class="submit-btn">
                     Send message
                 </button>
-                <input type="hidden">
+                    <input type="hidden">
             </form>
         </div>
-        <div><img src="images/duck-img.png" alt="a yellow duck"></div>
-        <div class="yellow-background">
+        <div class="yellow-background"></div>  
+        <div class="duck-img"><img src="images/duck-img.png" alt="a yellow duck"></div>
         </div>
-    </div>  
+    </div>
+    
 </body>
 </html>
