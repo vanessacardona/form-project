@@ -11,6 +11,7 @@ body {
 }
 
 .red-background {
+    position: relative;
     background-position: center;
     background-color: #BE0909;
     max-width: 954px;
@@ -20,11 +21,12 @@ body {
     margin-top: 50px;
     display: flex;
     align-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 form {
+    position: relative;
+    z-index: 2;
     max-width: 400px;
     width: 100%;
     padding-left: 50px;
@@ -33,15 +35,19 @@ form {
     gap: 30px;
 }
 
-yellow-background {
+.yellow-background {
+    position: absolute;
+    z-index: 0;
+    right: 0.5px;
     width: 345px;
     height: 594px;
     background: #FFB039;
     display: block;
+    padding-top: 13px;
+    margin-bottom: 1px;
     margin-left: 852px;
     margin-top: 153px;
-    margin-bottom: 153px;
-    
+    margin-bottom: 153px;   
 }
 
 
@@ -81,9 +87,9 @@ yellow-background {
 
 .textarea {
     resize: none;
-    width: 400px;
-    
+    width: 400px; 
 }
+
 .input-field::placeholder, .textarea::placeholder {
     color: #FEFFFF;
     opacity: 1;
@@ -107,12 +113,13 @@ yellow-background {
     color:rgba(0, 0, 0, 0.5);
     font-size: larger;
     background-color: #FFB039;
-    border-top: 2px solid rgba(0, 0, 0, 0.5);
-    
+    border-top: 2px solid rgba(0, 0, 0, 0.5);  
 }
 
 .duck-img {
+    position: relative;
+    top: 60px;
+    right: 50px;
     align-self: flex-end;
-    
-    
+    margin-left: -60px;  
 }
